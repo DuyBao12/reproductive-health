@@ -1,0 +1,14 @@
+body {
+  background-image: url(../image/backround.jpg);
+  background-size: cover;
+}
+.m-top {
+  margin-top: 17%;
+}
+.wg {
+  width: 50%;
+}
+li:hover {
+  background-color: #0d6efd;
+  color: white;
+}
