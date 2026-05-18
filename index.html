@@ -8,41 +8,30 @@
     <title>Bảo vệ sức khoẻ sinh sản của trẻ vị thành niên</title>
   </head>
   <body  data-bs-theme="">
-    <div class="ms-3 mt-3 fs-2"><b>HP:</b> <span id="hp">100</span></div>
-    <section class=" m-top container wg">
-      <div
-        class="px-5 py-3 rounded text-nowrap justify-content-center align-items-center border border-black"
-      >
-        <h4 id="questionTitle"></h4>
-        <p id="questionText">
-          
-        </p>
-      </div>
-      <ul id="answers" class="list-group border border-black mt-1"></ul>
-      </ul>
-      <div class="d-flex mt-3">
-        <button
-          class="btn btn-outline-secondary text-dark"
-          id="prevBtn"
-          type="button"
+      <div class="pt-3 pe-3 fs-2 text-dark text-end"><b>HP:</b> <span id="hp">100</span></div>
+      <section class=" m-top m-left container wg">
+        <div
+          class=" py-3 h-728 rounded just
+          ify-content-center align-items-center  text-center"
         >
-          Trở lại
-        </button>
-        <button class="btn btn-primary ms-auto" id="nextBtn" type="button">
-          Tiếp theo
-        </button>
-      </div>
-    </section>
-    <div id="popup" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content p-3">
-          <h5 id="popupTitle"></h5>
-          <p id="popupText"></p>
-          <button class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+          <h4 id="questionTitle" class="fs-2 "></h4>
+          <p id="questionText" class="fs-3 mt-4 px-2">
+          </p>
+        </div>
+
+        <ul id="answers" class="list-group mt-1 pt-15 fs-4"></ul>
+        </ul>
+        
+      </section>
+      <div id="popup" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content p-3">
+            <h5 id="popupTitle"></h5>
+            <p id="popupText"></p>
+            <button class="btn btn-primary" data-bs-dismiss="modal">OK</button>
+          </div>
         </div>
       </div>
-    </div>
-
     <script src="./bootstrap/js/bootstrap.min.js"></script>
     <script src="./bootstrap/js/bootstrap.bundle.js"></script>
     <script src="./js/index.js"></script>

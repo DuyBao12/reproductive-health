@@ -1,14 +1,46 @@
 body {
   background-image: url(../image/backround.jpg);
-  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.h-728 {
+  height: 200px;
+}
+.pt-15 {
+  padding-left: 10%;
+  padding-top: 65px;
+}
+#answers li {
+  border: none;
+  margin-bottom: 8px;
+  background: transparent;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* hover */
+#answers li:hover {
+  background: rgba(13, 110, 253, 0.3);
+}
+
+/* đúng */
+.correct {
+  background: #198754 !important;
+  color: white !important;
+}
+
+/* sai */
+.wrong {
+  background: #dc3545 !important;
+  color: white !important;
+}
+.m-left {
+  margin-left: 28%;
 }
 .m-top {
-  margin-top: 17%;
+  margin-top: 160px;
 }
 .wg {
   width: 50%;
-}
-li:hover {
-  background-color: #0d6efd;
-  color: white;
 }
