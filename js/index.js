@@ -365,7 +365,7 @@ function renderQuestion() {
   q.options.forEach((opt, index) => {
     const li = document.createElement("li");
 
-    li.className = "list-group-item list-group-item-action";
+    li.className = "list-group-item list-group-item-action ";
     li.innerText = opt;
 
     li.onclick = () => handleAnswer(index);
@@ -377,7 +377,7 @@ function renderQuestion() {
 function handleAnswer(selectedAnswer) {
   const q = finalQuestions[currentIndex];
 
-  const items = document.querySelectorAll("#answers li");
+  const items = document.querySelectorAll("#answers li ");
 
   // khóa click spam
   items.forEach((item) => {
@@ -446,6 +446,14 @@ function showResult() {
   }
   alert("HP còn lại: " + hp + "/100\n" + msg);
 }
-// init
-renderQuestion();
-updateHP();
+window.onload = () => {
+  document.getElementById("startBtn").onclick = () => {
+    document.getElementById("startScreen").hidden = true;
+
+    document.getElementById("quizContainer").hidden = false;
+
+    renderQuestion();
+
+    updateHP();
+  };
+};

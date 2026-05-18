@@ -7,32 +7,50 @@
     <link rel="stylesheet" href="./css/index.css" />
     <title>Bảo vệ sức khoẻ sinh sản của trẻ vị thành niên</title>
   </head>
-  <body  data-bs-theme="">
-      <div class="pt-3 pe-3 fs-2 text-dark text-end"><b>HP:</b> <span id="hp">100</span></div>
-      <section class=" m-top m-left container wg">
+  <body data-bs-theme="">
+    <!-- START -->
+    <div id="startScreen" class="start-screen">
+      <div class="start-box text-center">
+        <h1>Bảo vệ sức khoẻ sinh sản</h1>
+
+        <button id="startBtn" class="btn btn-primary btn-lg mt-4">
+          Bắt đầu
+        </button>
+      </div>
+    </div>
+
+    <!-- QUIZ -->
+    <div id="quizContainer" hidden>
+      <div class="pt-3 pe-3 fs-2 text-dark text-end">
+        <b>HP:</b> <span id="hp">100</span>
+      </div>
+
+      <section class="m-top m-left container wg">
         <div
-          class=" py-3 h-728 rounded just
-          ify-content-center align-items-center  text-center"
+          class="py-3 h-728 rounded justify-content-center align-items-center text-center"
         >
-          <h4 id="questionTitle" class="fs-2 "></h4>
-          <p id="questionText" class="fs-3 mt-4 px-2">
-          </p>
+          <h4 id="questionTitle" class="fs-2"></h4>
+
+          <p id="questionText" class="fs-3 mt-4 px-2"></p>
         </div>
 
         <ul id="answers" class="list-group mt-1 pt-15 fs-4"></ul>
-        </ul>
-        
       </section>
-      <div id="popup" class="modal fade">
-        <div class="modal-dialog">
-          <div class="modal-content p-3">
-            <h5 id="popupTitle"></h5>
-            <p id="popupText"></p>
-            <button class="btn btn-primary" data-bs-dismiss="modal">OK</button>
-          </div>
+    </div>
+
+    <!-- POPUP -->
+    <div id="popup" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content p-3">
+          <h5 id="popupTitle"></h5>
+
+          <p id="popupText"></p>
+
+          <button class="btn btn-primary" data-bs-dismiss="modal">OK</button>
         </div>
       </div>
-    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    </div>
+
     <script src="./bootstrap/js/bootstrap.bundle.js"></script>
     <script src="./js/index.js"></script>
   </body>
